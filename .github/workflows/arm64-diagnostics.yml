@@ -30,7 +30,7 @@ jobs:
         cat /proc/cpuinfo
         
         echo -e "\n=== KVM Support Check ==="
-        kvm-ok || echo "KVM check failed or not supported"
+        sudo kvm-ok || echo "KVM check failed or not supported"
         
         echo -e "\n=== Memory Information ==="
         cat /proc/meminfo
